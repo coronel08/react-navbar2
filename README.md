@@ -1,6 +1,10 @@
 # Getting Started with Create React App
 
+## Navbar-test
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Navbar-2
+Used this [youtube tutorial](https://www.youtube.com/watch?v=CXa0f4-dWi4&t=125s) for navbar2
 
 ## Available Scripts
 
