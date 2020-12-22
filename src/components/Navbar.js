@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import * as FaIcons from 'react-icons/fa';
 import {Link} from 'react-router-dom';
 import { SidebarData } from './SidebarData';
+import './Navbar.css'
 
 function Navbar() {
     const [sidebar, setSidebar] = useState(false)
@@ -19,7 +20,7 @@ function Navbar() {
                 <ul className='nav-menu-items'>
                     <li className='navbar-toggle'>
                         <Link to='#' className='menu-bars'>
-                            <FaIcons.FaWindowClose/>
+                            <FaIcons.FaJedi/>
                         </Link>
                     </li>
                     {SidebarData.map((item, index ) => {
