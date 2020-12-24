@@ -1,3 +1,4 @@
+/* Top navigation bar */
 .navbar {
     background-color: #ffefd5;
     height: 80px;
@@ -5,11 +6,10 @@
     justify-content: start;
     align-items: center;
 }
-
+/* Main Icon  */
 .menu-bars {
     margin-left: 2rem;
     font-size: 2rem;
-    background: peru;
 }
 
 .nav-menu {
@@ -26,7 +26,7 @@
 
 .nav-menu.active {
     left: 0;
-    transition: 350ms;
+    transition: 100ms;
 }
 
 .nav-text {
@@ -38,6 +38,7 @@
     height: 60px;
 }
 
+/* Sidebar styling */
 .nav-text a {
     text-decoration: none;
     color:peru;
@@ -46,8 +47,8 @@
     height: 100%;
     display: flex;
     align-items: center;
-    padding: 0 16px;
-    border-radius: 4px;
+    padding: 0 40px;
+    border-radius: 10px;
 }
 
 .nav-text a:hover {
@@ -59,7 +60,7 @@
 }
 
 .navbar-toggle {
-    background-color: #060b;
+    background-color: none;
     width: 100%;
     height: 80px;
     display: flex;
@@ -68,5 +69,5 @@
 }
 
 span {
-    margin: 16px;
+    margin-left: 16px;
 }
