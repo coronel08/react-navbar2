@@ -25,6 +25,7 @@ function Navbar() {
                         <Link to='#' className='menu-bars'>
                             <FaIcons.FaJedi/>
                         </Link>
+                        <span>Exit</span>
                     </li>
                     {SidebarData.map((item, index ) => {
                         return (
