@@ -5,28 +5,30 @@ class Projects extends Component{
         count:0
     };
 
-    styles={
-        border:'2px solid orange',
-        fontSize:15,
-        fontStyle:"italic"
-    };
-
     render(){
-        let classes='badge m-3 badge-';
-        classes += this.state.count === 0 ? "warning":"info";
-
         return(
             <React.Fragment>
                 <div className='projects'>
                     <h1>Todo List</h1>
-                    {/* Span tag inherits Classname and Inline Styles */}
-                    <span style={this.styles} className={classes}>
+                    <span style={this.styleBox} className={this.styleBadge()}>
                         {this.styleCount()}
                     </span>
                     <button className="btn btn-primary">Increment</button>
                 </div>
             </React.Fragment>
         );
+    }
+
+    styleBox={
+        border:'2px solid orange',
+        fontSize:15,
+        fontStyle:"italic"
+    }
+
+    styleBadge(){
+        let classes='badge m-3 badge-';
+        classes += this.state.count === 0 ? "warning":"info";
+        return classes;
     }
 
     styleCount(){
