@@ -3,6 +3,9 @@
 ## Navbar-2
 Used this [youtube tutorial](https://www.youtube.com/watch?v=CXa0f4-dWi4&t=125s) for navbar2
 
+## Todo List
+Following [this tutorial](https://vegibit.com/create-a-react-element-from-scratch/) to make a to do list
+
 ### Folders src
 * Components
     * Navbar.css used for styling

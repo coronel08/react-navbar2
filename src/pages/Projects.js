@@ -1,11 +1,28 @@
-import React from 'react'
+import React,{Component} from 'react'
 
-function Projects() {
-    return (
-        <div className='projects'>
-            <h1>Projects</h1>
-        </div>
-    )
+class Projects extends Component{
+    state={
+        count:0
+    };
+
+    render(){
+        return(
+            <React.Fragment>
+                <div className='projects'>
+                    <h1>Cartable</h1>
+                    <span>Test</span>
+                    <button>Increment</button>
+                </div>
+            </React.Fragment>
+        );
+    }
+
+    styleCount(){
+        const{count} = this.state;
+        return count === 0 ? 'No Items':count;
+    }
+
+
 }
 
 export default Projects
