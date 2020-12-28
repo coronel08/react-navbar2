@@ -1,9 +1,14 @@
-import React,{Component} from 'react'
+import React,{Component, useState} from 'react'
 
 class Projects extends Component{
     state={
         count:0
     };
+
+// handling an event, naming convention to use handle___.
+    handleIncrement(){
+        alert(this.state.count);
+    }
 
     render(){
         return(
@@ -13,7 +18,7 @@ class Projects extends Component{
                     <span style={this.styleBox} className={this.styleBadge()}>
                         {this.styleCount()}
                     </span>
-                    <button className="btn btn-primary">Increment</button>
+                    <button onClick={this.handleIncrement} className="btn btn-primary">Increment</button>
                 </div>
             </React.Fragment>
         );

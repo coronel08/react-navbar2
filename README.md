@@ -6,6 +6,11 @@ Used this [youtube tutorial](https://www.youtube.com/watch?v=CXa0f4-dWi4&t=125s)
 ## Todo List
 Following [this tutorial](https://vegibit.com/create-a-react-element-from-scratch/) to make a to do list
 
+* [ ] Add "// eslint-disable-next-line" to
+    * Line 1:26 in Project.js
+    * Line 1:10 in About.js
+* [ ] Change state in Projects.js to use [hook states](https://reactjs.org/docs/hooks-state.html)
+
 ### Folders src
 * Components
     * Navbar.css used for styling
