@@ -34,6 +34,7 @@ class Projects extends Component{
                                 Increment
                             </button>
                         </div>
+                        {this.props.children}
                     </div>
                 </div>
             </React.Fragment>

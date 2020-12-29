@@ -16,10 +16,11 @@ class Items extends Component{
         return (
             <React.Fragment>
                 {this.state.items.map(item => (
-                    < Projects 
-                        key={item.id}
-                        value={item.value}
-                    />
+                    <Projects key={item.id} value={item.value}>
+                        <div className='card-footer text-muted'>
+                            Footer passed via prop.children!
+                        </div>
+                    </Projects>
                 ))}
             </React.Fragment>
         );
