@@ -18,7 +18,7 @@ class Items extends Component{
                 {this.state.items.map(item => (
                     <Projects key={item.id} value={item.value}>
                         <div className='card-footer text-muted'>
-                            Footer passed via prop.children!
+                            Footer For item Number <b className='badge badge-pill badge-warning'>{item.id}</b>
                         </div>
                     </Projects>
                 ))}
