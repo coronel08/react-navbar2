@@ -21,4 +21,10 @@ export const SidebarData = [
         icon: <FaIcons.FaProjectDiagram/>,
         cName: 'nav-text'
     },
+    {
+        title: 'Items',
+        path: '/items',
+        icon: <FaIcons.FaAirFreshener/>,
+        cName: 'nav-text'
+    }
 ]

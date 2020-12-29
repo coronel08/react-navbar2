@@ -46,6 +46,9 @@ function County() {
     * SidebarData.js 
 * pages
     * pages, need to be filled and styled
+    * About, practiced styling buttons and conditional styling
+    * Projects page made a button that increases count, styled cards as well
+    * Items page makes projects repeat 3 times by using state
 * App.js / App.css used for routing
 * index.js renders App.js
 

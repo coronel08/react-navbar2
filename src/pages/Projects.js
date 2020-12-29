@@ -8,7 +8,7 @@ class Projects extends Component{
     // }
 
     state={
-        count:0
+        count:this.props.value
     };
 
 // handling an event, naming convention to use handle___.
@@ -17,12 +17,12 @@ class Projects extends Component{
         this.setState({count:this.state.count + 1});
     }
 
+
     render(){
         return(
             <React.Fragment>
                 <div className='projects text-center'>
-                    <h1>Todo List</h1>
-                    <div style={this.styleTodo} className='card mb-2'>
+                    <div style={this.styleTodo} className='card'>
                         <h5 className={this.styleCardHeader()}>{this.styleCount()}</h5>
                         <div className='card-body'>
                             <button
@@ -41,8 +41,8 @@ class Projects extends Component{
     }
 
     styleTodo={
-        left: '250px',
-        width: 'fit-content'
+        left: '200px',
+        width: '60%',
     }
 
 // Conditional for count, 0 show no items else show count
