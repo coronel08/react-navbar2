@@ -20,32 +20,42 @@ class Projects extends Component{
     render(){
         return(
             <React.Fragment>
-                <div className='projects'>
+                <div className='projects text-center'>
                     <h1>Todo List</h1>
-                    <span style={this.styleBox} className={this.styleBadge()}>
-                        {this.styleCount()}
-                    </span>
-                    <button onClick={this.handleIncrement} className="btn btn-primary">Increment</button>
+                    <div style={this.styleTodo} className='card mb-2'>
+                        <h5 className={this.styleCardHeader()}>{this.styleCount()}</h5>
+                        <div className='card-body'>
+                            <button
+                                onClick={() => {
+                                    this.handleIncrement();
+                                }}
+                                className='btn btn-lg btn-outline-secondary'
+                            >
+                                Increment
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </React.Fragment>
         );
     }
 
-    styleBox={
-        border:'2px solid orange',
-        fontSize:15,
-        fontStyle:"italic"
+    styleTodo={
+        left: '250px',
+        width: 'fit-content'
     }
 
-    styleBadge(){
-        let classes='badge m-3 badge-';
-        classes += this.state.count === 0 ? "warning":"info";
-        return classes;
-    }
-
+// Conditional for count, 0 show no items else show count
     styleCount(){
         const{count} = this.state;
         return count === 0 ? 'No Items':count;
+    }
+
+// Conditional styling if 0 style in warning, else primary 
+    styleCardHeader(){
+        let classes = 'card-header h4 text-white bg-';
+        classes += this.state.count === 0 ? 'warning':'primary';
+        return classes;
     }
 
 
