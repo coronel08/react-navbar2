@@ -1,12 +1,12 @@
 import React, {Component, useState} from 'react';
-import Projects from './Projects';
+import Item from './Item';
 
 class Items extends Component{
 // create state for how many lists to make
     state = {
         items:[
             {id:1, value:0},
-            {id:2, value:1},
+            {id:2, value:10},
             {id:3, value:0}
         ]
     };
@@ -16,11 +16,11 @@ class Items extends Component{
         return (
             <React.Fragment>
                 {this.state.items.map(item => (
-                    <Projects key={item.id} value={item.value}>
+                    <Item key={item.id} value={item.value}>
                         <div className='card-footer text-muted'>
-                            Footer For item Number <b className='badge badge-pill badge-warning'>{item.id}</b>
+                            Footer passed by children.prop For item Number <b className='badge badge-pill badge-warning'>{item.id}</b>
                         </div>
-                    </Projects>
+                    </Item>
                 ))}
             </React.Fragment>
         );

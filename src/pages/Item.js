@@ -1,6 +1,6 @@
 import React,{Component, useState} from 'react'
 
-class Projects extends Component{
+class Item extends Component{
 // Binding even handler in react, replaced by arrow function in handleIncrement
     // constructor(){
     //     super();
@@ -21,8 +21,8 @@ class Projects extends Component{
     render(){
         return(
             <React.Fragment>
-                <div className='projects text-center'>
-                    <div style={this.styleTodo} className='card'>
+                <div className='item text-center'>
+                    <div style={this.styleTodo} className='card m-2'>
                         <h5 className={this.styleCardHeader()}>{this.styleCount()}</h5>
                         <div className='card-body'>
                             <button
@@ -32,6 +32,9 @@ class Projects extends Component{
                                 className='btn btn-lg btn-outline-secondary'
                             >
                                 Increment
+                            </button>
+                            <button className='btn btn-lg btn-outline-danger ml-4'>
+                                Delete
                             </button>
                         </div>
                         {this.props.children}
@@ -62,4 +65,4 @@ class Projects extends Component{
 
 }
 
-export default Projects
+export default Item

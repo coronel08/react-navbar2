@@ -7,9 +7,9 @@ Used this [youtube tutorial](https://www.youtube.com/watch?v=CXa0f4-dWi4&t=125s)
 Following [this tutorial](https://vegibit.com/create-a-react-element-from-scratch/) to make a to do list
 
 * [ ] Add "// eslint-disable-next-line" to
-    * Line 1:26 in Project.js
+    * Line 1:26 in Item.js
     * Line 1:10 in About.js
-* [ ] Change state in Projects.js to use [hook states](https://reactjs.org/docs/hooks-state.html) below is count named as county
+* [ ] Change state in Item.js to use [hook states](https://reactjs.org/docs/hooks-state.html) below is count named as county
     * call the below code in the render function/class by calling it like this < County />
 ```
 function County() {
@@ -47,8 +47,8 @@ function County() {
 * pages
     * pages, need to be filled and styled
     * About, practiced styling buttons and conditional styling
-    * Projects page made a button that increases count, styled cards as well
-    * Items page makes projects repeat 3 times by using state
+    * Item page made a button that increases count, styled cards as well
+    * Items page makes item repeat 3 times by using state
 * App.js / App.css used for routing
 * index.js renders App.js
 
