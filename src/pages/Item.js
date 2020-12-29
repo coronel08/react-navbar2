@@ -17,7 +17,7 @@ class Item extends Component{
         this.setState({count:this.state.count + 1});
     }
 
-
+// delete button here takes delete event from parents @ Items.jsx
     render(){
         return(
             <React.Fragment>
@@ -33,7 +33,11 @@ class Item extends Component{
                             >
                                 Increment
                             </button>
-                            <button className='btn btn-lg btn-outline-danger ml-4'>
+                            <button 
+                                className='btn btn-lg btn-outline-danger ml-4'
+                                onClick={this.props.onDelete}
+                                
+                            >
                                 Delete
                             </button>
                         </div>

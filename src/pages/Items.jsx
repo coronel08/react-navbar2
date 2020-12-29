@@ -11,12 +11,20 @@ class Items extends Component{
         ]
     };
 
+    handleDelete = () => {
+        alert("Button Clicked!");
+    }
+
 // render 3 to do list by passing state in map
     render(){
         return (
             <React.Fragment>
                 {this.state.items.map(item => (
-                    <Item key={item.id} value={item.value}>
+                    <Item 
+                        key={item.id} 
+                        value={item.value}
+                        onDelete={this.handleDelete}
+                    >
                         <div className='card-footer text-muted'>
                             Footer passed by children.prop For item Number <b className='badge badge-pill badge-warning'>{item.id}</b>
                         </div>
