@@ -9,7 +9,35 @@ Following [this tutorial](https://vegibit.com/create-a-react-element-from-scratc
 * [ ] Add "// eslint-disable-next-line" to
     * Line 1:26 in Project.js
     * Line 1:10 in About.js
-* [ ] Change state in Projects.js to use [hook states](https://reactjs.org/docs/hooks-state.html)
+* [ ] Change state in Projects.js to use [hook states](https://reactjs.org/docs/hooks-state.html) below is count named as county
+    * call the below code in the render function/class by calling it like this < County />
+```
+function County() {
+    const [count, setCount] = useState(1)
+
+    function decreaseCount(){
+        setCount(prevCount => prevCount - 1)
+    }
+
+    function increaseCount(){
+        setCount(prevCount => prevCount + 1)
+    }
+
+    // make button look nice
+    function styleButton(){
+        let classes='list-group-item list-group-item-primary';
+        return classes;
+    }
+
+    return(
+        <React.Fragment>
+            <button onClick={decreaseCount} className={styleButton()}> - </button>
+            <span>{count}</span>
+            <button onClick={increaseCount} className={styleButton()}> + </button>
+        </React.Fragment>
+    )
+}
+```
 
 ### Folders src
 * Components

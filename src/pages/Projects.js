@@ -1,13 +1,20 @@
 import React,{Component, useState} from 'react'
 
 class Projects extends Component{
+// Binding even handler in react, replaced by arrow function in handleIncrement
+    // constructor(){
+    //     super();
+    //     this.handleIncrement=this.handleIncrement.bind(this);
+    // }
+
     state={
         count:0
     };
 
 // handling an event, naming convention to use handle___.
-    handleIncrement(){
-        alert(this.state.count);
+// the setState method replaces state constructor
+    handleIncrement = () =>{
+        this.setState({count:this.state.count + 1});
     }
 
     render(){
