@@ -7,6 +7,7 @@ class Item extends Component{
     //     this.handleIncrement=this.handleIncrement.bind(this);
     // }
 
+    // accept value from items by passing props.thing
     state={
         count:this.props.value
     };
@@ -35,8 +36,7 @@ class Item extends Component{
                             </button>
                             <button 
                                 className='btn btn-lg btn-outline-danger ml-4'
-                                onClick={this.props.onDelete}
-                                
+                                onClick={() => this.props.onDelete(this.props.id)}
                             >
                                 Delete
                             </button>

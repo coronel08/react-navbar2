@@ -11,9 +11,10 @@ class Items extends Component{
         ]
     };
 
-    handleDelete = () => {
-        alert("Button Clicked!");
-    }
+    handleDelete = itemId => {
+        const items = this.state.items.filter(item => item.id !== itemId);
+        this.setState({items:items});
+    };
 
 // render 3 to do list by passing state in map
     render(){
@@ -24,6 +25,7 @@ class Items extends Component{
                         key={item.id} 
                         value={item.value}
                         onDelete={this.handleDelete}
+                        id={item.id}
                     >
                         <div className='card-footer text-muted'>
                             Footer passed by children.prop For item Number <b className='badge badge-pill badge-warning'>{item.id}</b>
