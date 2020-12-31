@@ -6,6 +6,8 @@ Used this [youtube tutorial](https://www.youtube.com/watch?v=CXa0f4-dWi4&t=125s)
 ## Todo List
 Following [this tutorial](https://vegibit.com/create-a-react-element-from-scratch/) to make a to do list
 
+* [x] Use fake data from [json placholder](https://jsonplaceholder.typicode.com/), found in [useEffect tutorial](https://www.youtube.com/watch?v=0ZJgIjIuY7U&t=309s). Put it in Test page.
+* [ ] look into using addEventListener() function to add to  window or document.
 * [ ] Add "// eslint-disable-next-line" to
     * Line 1:26 in Item.js
     * Line 1:10 in About.js
@@ -45,6 +47,7 @@ function County() {
     * Navbar.js navbar and sidebar
     * SidebarData.js 
 * pages
+    * Test, used to practice functions using [youtube vid on state.](https://www.youtube.com/watch?v=O6P86uwfdR0) Need to re write as classes as well. 
     * pages, need to be filled and styled
     * About, practiced styling buttons and conditional styling
     * Item page made a button that increases count, styled cards as well

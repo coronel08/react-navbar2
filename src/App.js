@@ -5,7 +5,7 @@ import Home from './pages/Home'
 import Item from './pages/Item'
 import About from './pages/About'
 import Items from './pages/Items'
-
+import Test from './pages/Test'
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
       <Route path='/item' component={Item}/>
       <Route path='/about' component={About}/>
       <Route path='/items' component={Items}/>
+      <Route path='/test' component={Test}/>
     </Switch>
   </Router>
   </>
