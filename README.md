@@ -54,6 +54,7 @@ function County() {
     * Items page makes item repeat 3 times by using state
 * App.js / App.css used for routing
 * index.js renders App.js
+* Callbacks vs promises, used to practice using callback functions and promises. 
 
 ## Navbar-test
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
