@@ -60,6 +60,8 @@ function Test() {
     return (
         <React.Fragment>
         <div className='count'>
+            {/* The Clock either using class or function */}
+            <ClockUsingHooks />
             <button className='btn-lg' onClick={decreaseCount}>-</button>
             <h2>{state.count}<span>{state.theme}</span></h2>
             <button className='btn-lg' onClick={increaseCount}>+</button>
@@ -81,22 +83,71 @@ function Test() {
 
 export default Test
 
+/* 
+Practicing using classes, rendered in html above.
+LifeCycle Methods = mounting and unmounting elements from DOM. Invokes the following four build-in methods
+- constructor()
+- getDerivedStateFromProps()
+- render()
+- componentDidMount()
+https://dev.to/danielleye/react-class-component-vs-function-component-with-hooks-13dg
+*/
+class ClockUsingClass extends React.Component{
+    constructor(props){
+        super(props)
+        this.state = {date: new Date() }
+    }
 
+    // calls on changeTime()
+    componentDidMount(){
+        this.time = setInterval(() => {
+            this.changeTime()
+        }, 1000)
+    }
 
-// Class Excercise, using arrow function
-class Person {
-    constructor(name){
-        this.name = name
-    };
+    componentWillUnmount(){
+        clearInterval(this.time)
+    }
 
-    printNameArrow(){
-        setTimeout(() => {
-            console.log('test: ' + this.name)
-        },100)
+    // updates date state
+    changeTime(){
+        this.setState({ date: new Date() })
+    }
+
+    render(){
+        return(
+            <div className='clock'>
+                <h1>Hello! This is a class component clock.</h1>
+                <h2>It is {this.state.date.toLocaleTimeString()}</h2>
+            </div>
+        )
     }
 }
 
-let person = new Person('Bob')
-person.printNameArrow()
 
+/* 
+Redone using functions and hooks instead of classes
+rendered in test
+*/
 
+ function ClockUsingHooks() {
+     const [time, setTime] = useState(new Date())
+     
+     const changeTime = () => {
+         setTime(new Date())
+     }
+
+    useEffect(() => {
+        const tick = setInterval(() => {
+            changeTime()
+        }, 1000)
+        return () => clearInterval(tick)
+    })
+
+    return(
+        <div className='clock'>
+            <h1>This is a function component clock</h1>
+            <h2>It is {time.toLocaleTimeString()}</h2>
+        </div>
+    )
+ }
