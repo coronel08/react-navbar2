@@ -9,6 +9,11 @@ function Navbar() {
     const [sidebar, setSidebar] = useState(false)
 
     const showSidebar = () => setSidebar (!sidebar)
+    /* Can also be written as a function instead of const
+    function showSidebar (){
+        return setSidebar (!sidebar)        
+    }
+    */
 
     return (
         <>

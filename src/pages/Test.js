@@ -51,6 +51,7 @@ function Test() {
     const [resourceType, setResourceType] = useState('posts')
     // Create an empty array for fetching json data, gets mapped in html
     const [items, setItems] = useState([])
+    
     useEffect(() => {
         fetch(`https://jsonplaceholder.typicode.com/${resourceType}`)
             .then(response => response.json())
@@ -80,8 +81,8 @@ function Test() {
         </React.Fragment>
     )
 }
-
 export default Test
+
 
 /* 
 Practicing using classes, rendered in html above.
@@ -90,6 +91,7 @@ LifeCycle Methods = mounting and unmounting elements from DOM. Invokes the follo
 - getDerivedStateFromProps()
 - render()
 - componentDidMount()
+setState can only be used in classes, not in functions.
 https://dev.to/danielleye/react-class-component-vs-function-component-with-hooks-13dg
 */
 class ClockUsingClass extends React.Component{
@@ -137,6 +139,7 @@ rendered in test
          setTime(new Date())
      }
 
+//  useEffect() hook used to replicate lifecycle behaviour
     useEffect(() => {
         const tick = setInterval(() => {
             changeTime()
