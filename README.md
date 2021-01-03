@@ -5,7 +5,7 @@ Used this [youtube tutorial](https://www.youtube.com/watch?v=CXa0f4-dWi4&t=125s)
 
 ## Todo List
 Following [this tutorial](https://vegibit.com/create-a-react-element-from-scratch/) to make a to do list
-
+* [ ] Style pages 
 * [x] Use fake data from [json placholder](https://jsonplaceholder.typicode.com/), found in [useEffect tutorial](https://www.youtube.com/watch?v=0ZJgIjIuY7U&t=309s). Put it in Test page.
 * [ ] look into using addEventListener() function to add to  window or document.
 * [ ] Add "// eslint-disable-next-line" to
@@ -48,13 +48,13 @@ function County() {
     * SidebarData.js 
 * pages
     * Test, used to practice functions using [youtube vid on state.](https://www.youtube.com/watch?v=O6P86uwfdR0) Need to re write as classes as well. 
-    * pages, need to be filled and styled
     * About, practiced styling buttons and conditional styling
     * Item page made a button that increases count, styled cards as well
     * Items page makes item repeat 3 times by using state
 * App.js / App.css used for routing
 * index.js renders App.js
 * Callbacks vs promises, used to practice using callback functions and promises. 
+* classes_practice used to practice calls and functions
 
 ## Navbar-test
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
