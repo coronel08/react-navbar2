@@ -1,10 +1,10 @@
 import React, {useState} from 'react'
 
-function TodoForm() {
+function TodoForm({onAddTodo, todo}) {
     const [value, setValue] = useState("");
 
     return (
-        <form style={{display: 'flex'}}>
+        <form onSubmit={() => onAddTodo(value)} style={{display: 'flex'}}>
             <input 
                 type="text"
                 className="form-control"
