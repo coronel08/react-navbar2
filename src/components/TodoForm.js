@@ -12,10 +12,6 @@ function TodoForm() {
                 onChange={e => setValue(e.target.value)}
                 placeholder="Type then hit Enter"
             />
-            {/* <button className='btn btn-md btn-primary'
-            >
-                Add
-            </button> */}
         </form>
     )
 }

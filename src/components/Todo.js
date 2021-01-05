@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Todo({todo, index, onComplete}) {
+function Todo({todo, index, onComplete, onUnfinished, onDeleteTodo}) {
     return (
         <React.Fragment>
         <div key={index} className="card mb-3">
@@ -11,9 +11,20 @@ function Todo({todo, index, onComplete}) {
                 >
                     {todo.text}
                 </h5>
+                {/* Completed Button */}
                 <button onClick={()=>onComplete(index)} className='btn btn-success'>
                     Mark Complete
                 </button>
+                {/* Incomplete Button */}
+                <button onClick={()=>onUnfinished(index)} className='btn btn-warning'>
+                    Mark Incomplete
+                </button>
+                {/* Delete Button */}
+                <button onClick={()=>onDeleteTodo(index)} className='btn btn-danger'>
+                    Delete
+                </button>
+
+
             </div>
 
         </div>

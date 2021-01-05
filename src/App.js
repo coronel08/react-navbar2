@@ -12,23 +12,38 @@ import Todo from './components/Todo';
 import TodoForm from './components/TodoForm';
 
 function App(){
-  const [todos, setTodos] = useState([
+  // Mock Data
+  const testData = [
     {text:"Learn React Hooks", isCompleted:true},
     {text:"Take a drive", isCompleted:false},
     {text:"Play some games", isCompleted:false}
-  ]);
+  ]
+
+  // Set State
+  const [todos, setTodos] = useState(testData);
 
   // passes todos as rest param,
   const handleAddTodo = text => {
     const newTodos = [...todos,{text}];
     setTodos(newTodos);
-    console.log(newTodos)
   }
 
-  // toggles strikethrough text
+  // event handler, handles onComplete event. toggles strikethrough text
   const handleComplete = (index) => {
     const newTodos = [...todos]
-    newTodos[index].isCompleted = !newTodos[index].isCompleted;
+    newTodos[index].isCompleted = true
+    setTodos(newTodos)
+  }
+
+  const handleUnfinished = index => {
+    const newTodos = [...todos]
+    newTodos[index].isCompleted = false
+    setTodos(newTodos)
+  }
+
+  const handleDeleteTodo = index => {
+    const newTodos = [...todos]
+    newTodos.splice(index,1)
     setTodos(newTodos)
   }
 
@@ -39,6 +54,8 @@ function App(){
           todo={todo} 
           key={index}
           onComplete={handleComplete}
+          onUnfinished={handleUnfinished}
+          onDeleteTodo={handleDeleteTodo}
           index={index}
         />
       ))}
