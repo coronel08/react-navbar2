@@ -1,4 +1,6 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect} from 'react';
+import './Test.css'
+
 // useState explaned in https://www.youtube.com/watch?v=O6P86uwfdR0
 
 // Function that gets passed into useState 1st and 2nd way
@@ -60,24 +62,28 @@ function Test() {
 
     return (
         <React.Fragment>
-        <div className='count'>
-            {/* The Clock either using class or function */}
-            <ClockUsingHooks />
-            <button className='btn-lg' onClick={decreaseCount}>-</button>
-            <h2>{state.count}<span>{state.theme}</span></h2>
-            <button className='btn-lg' onClick={increaseCount}>+</button>
-            <div className='posts'>
-                <button onClick={() => setResourceType('posts')}>Posts</button>
-                <button onClick={() => setResourceType('users')}>Users</button>
-                <h1>{resourceType}</h1>
-                {/* mapping json */}
-                <span>
-                    {items.map(item => {
-                    return <pre>{JSON.stringify(item)}</pre>
-                    })}
-                </span>
+        <section className='showcase'>
+            <div className='clock'>
+                {/* The Clock either using class or function */}
+                <ClockUsingHooks />
             </div>
-        </div>
+            <div className='count'>
+                <button className='btn-lg' onClick={decreaseCount}>-</button>
+                <h2>{state.count}<span>{state.theme}</span></h2>
+                <button className='btn-lg' onClick={increaseCount}>+</button>
+            </div>
+            <div className='posts'>
+                    <button onClick={() => setResourceType('posts')}>Posts</button>
+                    <button onClick={() => setResourceType('users')}>Users</button>
+                    <h1>{resourceType}</h1>
+                    {/* mapping json */}
+                    <span>
+                        {items.map(item => {
+                        return <pre>{JSON.stringify(item)}</pre>
+                        })}
+                    </span>
+            </div>
+            </section>
         </React.Fragment>
     )
 }

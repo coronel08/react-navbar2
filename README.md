@@ -47,7 +47,7 @@ function County() {
     * Navbar.js navbar and sidebar
     * SidebarData.js 
 * pages
-    * Test, used to practice functions using [youtube vid on state.](https://www.youtube.com/watch?v=O6P86uwfdR0) Need to re write as classes as well. 
+    * Test, used to practice functions using [youtube vid on state.](https://www.youtube.com/watch?v=O6P86uwfdR0) Need to re write as classes as well. Also used for testing out CSS and styling in React.
     * About, practiced styling buttons and conditional styling
     * Item page made a button that increases count, styled cards as well
     * Items page makes item repeat 3 times by using state

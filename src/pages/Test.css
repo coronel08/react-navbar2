@@ -1,0 +1,18 @@
+.showcase{
+    background-color: aqua;
+}
+
+.clock {
+    display: flex;
+    padding: 2rem;
+    justify-content: end;
+}
+.count{
+    display: flex;
+    justify-content: center;
+    vertical-align: auto;
+}
+
+.count button{
+    background-color: red;
+}
