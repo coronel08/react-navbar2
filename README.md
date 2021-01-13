@@ -1,10 +1,90 @@
 # Getting Started with Create React App
+This project has a Navbar, Todo List, and a couple of test files that were used to practice React. 
 
-## Navbar-2
+
 Used this [youtube tutorial](https://www.youtube.com/watch?v=CXa0f4-dWi4&t=125s) for navbar2
+Following [this tutorial](https://vegibit.com/create-a-react-element-from-scratch/) to make a to do list
+
+
+## Table of Contents
+* [CSS Notes](#CSS-Notes)
+* [React Notes](#React-notes)
+* [Folder Src](#Folder-src)
+* [Todo List](#Todo-list)
+* [Learn More](#Learn-more)
+
+
+# CSS Notes
+Check [Readme for Video site](https://github.com/coronel08/website-vid-project) I made.
+
+
+## React Notes
+Notes on learning Javascript and React.
+
+
+#### React Switch vs Router
+[Router vs Switch explained](https://medium.com/@jenniferdobak/react-router-vs-switch-components-2af3a9fc72e)
+[Router and Switch example](https://reactrouter.com/web/api/Switch)
+A switch is helpfull with **nested routes**, will only render the first matched.
+
+
+#### React Hashrouter vs Browserrouter
+**Hash Router**: for small applications that dont need backend. Has # in url 
+**Browser Router**: recommended when we have backend or static web page host
+
+
+#### Navlink vs Link
+Example of React Navlink and Route. Navlink is used to specify which element is active in a Navigation Bar with CSS
+```
+<li><NavLink to="/about">About</NavLink></li>
+<Route path="/about" component={About}/>
+
+<!-- CSS -->
+.active {
+  background-color: #0099FF;
+}
+```
+
+
+#### Inline Styling React
+Styled components using inline example.
+```
+import styled from "styled-component"
+const StyledMenu = styled.div`
+    .menu {
+        list-style:none;
+        background-color: white;
+    }
+    .menu.active {
+        background-color:black;
+    }
+`
+```
+
+
+## Folders src
+Folder and file structure broken down. 
+<br>
+
+#### TESTING Functions and Javascript Files
+* Callbacks vs promises, used to practice using callback functions and promises. 
+* Classes_Practice used to practice calls and functions
+#### FOLDERS
+* Components Folder
+    * Navbar.css used for styling
+    * Navbar.js navbar and sidebar
+    * SidebarData.js 
+* Pages Folder
+    * Test, used to practice functions using [youtube vid on state.](https://www.youtube.com/watch?v=O6P86uwfdR0) Need to re write as classes as well. Also used for testing out CSS and styling in React.
+    * About, practiced styling buttons and conditional styling
+    * Item page made a button that increases count, styled cards as well
+    * Items page makes item repeat 3 times by using state
+* App.js / App.css used for routing
+* index.js renders App.js
+
 
 ## Todo List
-Following [this tutorial](https://vegibit.com/create-a-react-element-from-scratch/) to make a to do list
+
 * [ ] Style pages 
 * [x] Use fake data from [json placholder](https://jsonplaceholder.typicode.com/), found in [useEffect tutorial](https://www.youtube.com/watch?v=0ZJgIjIuY7U&t=309s). Put it in Test page.
 * [ ] look into using addEventListener() function to add to  window or document.
@@ -12,7 +92,7 @@ Following [this tutorial](https://vegibit.com/create-a-react-element-from-scratc
     * Line 1:26 in Item.js
     * Line 1:10 in About.js
 * [ ] Change state in Item.js to use [hook states](https://reactjs.org/docs/hooks-state.html) below is count named as county
-    * call the below code in the render function/class by calling it like this < County />
+    * Code below just increases count. Call the below code in the render function/class by calling it like this < County />. 
 ```
 function County() {
     const [count, setCount] = useState(1)
@@ -41,49 +121,6 @@ function County() {
 }
 ```
 
-### Folders src
-* Components
-    * Navbar.css used for styling
-    * Navbar.js navbar and sidebar
-    * SidebarData.js 
-* pages
-    * Test, used to practice functions using [youtube vid on state.](https://www.youtube.com/watch?v=O6P86uwfdR0) Need to re write as classes as well. Also used for testing out CSS and styling in React.
-    * About, practiced styling buttons and conditional styling
-    * Item page made a button that increases count, styled cards as well
-    * Items page makes item repeat 3 times by using state
-* App.js / App.css used for routing
-* index.js renders App.js
-* Callbacks vs promises, used to practice using callback functions and promises. 
-* classes_practice used to practice calls and functions
-
-## Navbar-test
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-In the project directory, you can run:
-
-### `npm start`
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm run build`
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ## Learn More
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
