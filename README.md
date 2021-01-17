@@ -8,8 +8,18 @@ Following [this tutorial](https://vegibit.com/create-a-react-element-from-scratc
 
 ## Table of Contents
 * [CSS Notes](#CSS-Notes)
+    * test
 * [React Notes](#React-notes)
+    * [Switch vs Router](#Switch-vs-Router)
+    * [Hashrouter vs Browserrouter](#Hashrouter-vs-Browserrouter)
+    * [Navlink vs Link](#Navlink-vs-Link)
+    * [Inline Styling React](Inline-Styling-React)
 * [Javascript Notes](#Javascript-Notes)
+    * [Closures and Nesting Functions](#Closures-and-Nesting-Functions)
+    * [Recursion vs Loop](#Recursion-vs-loop)
+    * [Array Methods](#Array-methods)
+    * [Sorting Arrays](#Sorting-Arrays)
+    * [Array Itteration](#Array-Itteration)
 * [Folder Src](#Folder-src)
 * [Todo List](#Todo-list)
 * [Learn More](#Learn-more)
@@ -20,19 +30,16 @@ Check [Readme for Video site](https://github.com/coronel08/website-vid-project) 
 
 
 # React Notes
-Notes on learning Javascript and React.
-<br><br>
+Notes on learning Javascript and React.<br><br>
 
-### React Switch vs Router
+### Switch vs Router
 [Router vs Switch explained](https://medium.com/@jenniferdobak/react-router-vs-switch-components-2af3a9fc72e)
 [Router and Switch example](https://reactrouter.com/web/api/Switch)
-A switch is helpfull with **nested routes**, will only render the first matched.
-<br>
+A switch is helpfull with **nested routes**, will only render the first matched.<br><br>
 
-### React Hashrouter vs Browserrouter
+### Hashrouter vs Browserrouter
 **Hash Router**: for small applications that dont need backend. Has # in url 
-**Browser Router**: recommended when we have backend or static web page host
-
+**Browser Router**: recommended when we have backend or static web page host <br><br>
 
 ### Navlink vs Link
 Example of React Navlink and Route. Navlink is used to specify which element is active in a Navigation Bar with CSS
@@ -45,7 +52,7 @@ Example of React Navlink and Route. Navlink is used to specify which element is 
   background-color: #0099FF;
 }
 ```
-
+<br><br>
 
 ### Inline Styling React
 Styled components using inline example.
@@ -64,12 +71,12 @@ const StyledMenu = styled.div`
 <br><br>
 
 # Javascript Notes
-blah blah
 * increment = ++
 * decrement = --
 <br><br>
 
 ## Closures and Nesting Functions
+[Closures Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
 ```
 function makeAdder(a){
     return function(b){
@@ -81,8 +88,45 @@ var add20 = makeAdder(20)
 add5(8)
 add20(8)
 ```
-<br><br>
-#### private variable / nesting function
+another example
+```
+function init(){
+    var private = 'Mozilla'
+    function displayName(){
+        return private
+    }
+    return displayName()
+}
+myInit = init()
+myInit()
+```
+** best Example ** can also be redone to use arrow functions
+```
+var counter = function(){
+    var privateCounter=0
+    function changeCount(value){
+        privateCounter += value
+    }
+
+    return{
+        increment:function(){
+            changeCount(1)
+        },
+        decrement:function(){
+            changeCount(-1)
+        },
+        value:function(){
+            return privateCounter
+        }
+    }
+}
+counter1=counter()
+counter2=counter()
+counter1.increment()
+counter1.value()
+counter2.value()
+```
+### private variable / nesting function
 ```
 function secretVariable(){
     var private = "secret variable"
@@ -93,6 +137,29 @@ function secretVariable(){
 var getPrivateVariable = secretVariable()
 console.log(getPrivateVariable())
 ```
+<br><br>
+
+## Recursion vs Loop
+For Loop below / Iteration
+```
+function countdown(number){
+    for (let i=number; i > 0; i--) {
+        console.log(i)
+    }
+}
+```
+Recursion below, a recursive function calls itself
+```
+function countdown(number){
+    if(number === 0){
+        return
+    }
+
+    console.log(number)
+    countdown(number - 1)
+}
+```
+<br><br>
 
 ## Array methods
 * [array method chart](https://www.w3schools.com/jsref/jsref_obj_array.asp)
@@ -111,7 +178,6 @@ Using ES6, use [rest parameter](https://developer.mozilla.org/en-US/docs/Web/Jav
 ```
 fruits = ["start", ...fruits]
 ```
-
 <br>
 
 Change value of an item by using array index. changes apple to Kiwi
@@ -131,14 +197,13 @@ fruits.splice(1,0,"item1")
 ### Slice
 Slice method slices out a piece of an array into a new array. <br> 
 slice(start,stop)
-<br> <br> <br>
+<br> <br>
 
 ## Sorting Arrays
 [W3 Sorting Arrays page](https://www.w3schools.com/js/js_array_sort.asp)
 sort(): Sorts an array alphabetically 
 reverse(): reverse sort
-random use [Fisher Yates Method](https://www.w3schools.com/js/js_array_sort.asp)
-<br>
+random use [Fisher Yates Method](https://www.w3schools.com/js/js_array_sort.asp)<br><br>
 
 ### Highest or Lowest Array Value
 **Sorting Ascending**
@@ -170,6 +235,14 @@ points.sort((a,b) => b - a)
 * find(): returns value of item that passes test/fucntion
 * findIndex(): 
 <br><br>
+
+## Strip HTML strings
+strip the html from an element
+```
+const stripHTMLTags = str => str.replace(/<[^>]*>/g, '')
+<!-- Example -->
+stripHTMLTags ('<a href="#"> Me and you </a>')
+```
 
 # Folders src
 Folder and file structure broken down. 
