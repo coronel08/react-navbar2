@@ -1,7 +1,14 @@
+# Welcome to MkDocs
+For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## Commands
+* `mkdocs new [dir-name]` - Create a new project.
+* `mkdocs serve` - Start the live-reloading docs server.
+* `mkdocs build` - Build the documentation site.
+* `mkdocs -h` - Print help message and exit.
+
 # Getting Started with Create React App
 This project has a Navbar, Todo List, and a couple of test files that were used to practice React. 
 
-added mkdocs for notes. go live with mkdocs serve
 
 Used this [youtube tutorial](https://www.youtube.com/watch?v=CXa0f4-dWi4&t=125s) for navbar2
 Following [this tutorial](https://vegibit.com/create-a-react-element-from-scratch/) to make a to do list
@@ -302,15 +309,3 @@ function County() {
     )
 }
 ```
-
-
-# Learn More
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Making a Progressive Web App
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Deployment
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
