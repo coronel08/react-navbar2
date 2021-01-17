@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 This project has a Navbar, Todo List, and a couple of test files that were used to practice React. 
 
-added mkdocs for notes. go live with mkdocs serve
+added[ mkdocs for notes](https://towardsdatascience.com/creating-software-documentation-in-under-10-minutes-with-mkdocs-b11f52f0fb10) go live with mkdocs serve
 
 Used this [youtube tutorial](https://www.youtube.com/watch?v=CXa0f4-dWi4&t=125s) for navbar2
 Following [this tutorial](https://vegibit.com/create-a-react-element-from-scratch/) to make a to do list
