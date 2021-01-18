@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 This project has a Navbar, Todo List, and a couple of test files that were used to practice React. 
 
-added[ mkdocs for notes](https://towardsdatascience.com/creating-software-documentation-in-under-10-minutes-with-mkdocs-b11f52f0fb10) go live with mkdocs serve
+added[ mkdocs for notes](https://towardsdatascience.com/creating-software-documentation-in-under-10-minutes-with-mkdocs-b11f52f0fb10) go live with "mkdocs serve". Needs python virtual env
 
 Used this [youtube tutorial](https://www.youtube.com/watch?v=CXa0f4-dWi4&t=125s) for navbar2
 Following [this tutorial](https://vegibit.com/create-a-react-element-from-scratch/) to make a to do list
@@ -20,6 +20,7 @@ Following [this tutorial](https://vegibit.com/create-a-react-element-from-scratc
     * [Array Methods](#Array-methods)
     * [Sorting Arrays](#Sorting-Arrays)
     * [Array Itteration](#Array-Itteration)
+    * [Destructuring](#Destructuring)
 * [Folder Src](#Folder-src)
 * [Todo List](#Todo-list)
 * [Learn More](#Learn-more)
@@ -174,7 +175,8 @@ Can also add to back of an array by using **Length**
 ```
 fruits[fruits.length] = "Pineapple"
 ```
-Using ES6, use [rest parameter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
+Using ES6, use [rest parameter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters). Also known as spread.<br>
+Can also use concat operator
 ```
 fruits = ["start", ...fruits]
 ```
@@ -236,13 +238,46 @@ points.sort((a,b) => b - a)
 * findIndex(): 
 <br><br>
 
-## Strip HTML strings
+### Strip HTML strings
 strip the html from an element
 ```
 const stripHTMLTags = str => str.replace(/<[^>]*>/g, '')
 <!-- Example -->
 stripHTMLTags ('<a href="#"> Me and you </a>')
 ```
+<br><br>
+
+## Destructuring
+Example below skips b and then defines the rest using rest/spread operator. Based on position
+```
+const alphabet = ['a','b','c','d','e','f']
+const [a,,c,...rest] = alphabet
+console.log(a,c,rest)
+``` 
+A function that returns an array thaat gets deconstructed
+```
+function testFunction(num1,num2){
+    return [a+b, a*b]
+}
+const [sum, multiply, division='No'] = testFunction(3,4)
+```
+OBJECT DESTRUCTURING, instead of being based on position it is based on the name of the key. Need to research on how to destructure into a function
+```
+const person1 = {
+    name:"Frank",
+    age: 32,
+    address: {
+        city: "Los Angeles",
+        state: "Ca"
+    }
+}
+
+const {name, address:{ city }} = person1
+
+function printUser{}
+```
+
+<br><br>
 
 # Folders src
 Folder and file structure broken down. 
