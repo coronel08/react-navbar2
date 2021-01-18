@@ -4,7 +4,13 @@ function TodoForm({onAddTodo, todo}) {
     const [value, setValue] = useState("");
 
     return (
-        <form onSubmit={() => onAddTodo(value)} style={{display: 'flex'}}>
+        <form  
+            onSubmit={(e) => {
+                e.preventDefault();
+                onAddTodo(value)}
+            }
+            style={{display: 'flex'}}
+        >
             <input 
                 type="text"
                 className="form-control"
