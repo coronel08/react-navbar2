@@ -21,6 +21,7 @@ Following [this tutorial](https://vegibit.com/create-a-react-element-from-scratc
     * [Sorting Arrays](#Sorting-Arrays)
     * [Array Itteration](#Array-Itteration)
     * [Destructuring](#Destructuring)
+    * [Conditionals vs Switch vs Ternary](#Conditionals-vs-Switch-vs-Ternary)
 * [Folder Src](#Folder-src)
 * [Todo List](#Todo-list)
 * [Learn More](#Learn-more)
@@ -276,7 +277,42 @@ const {name, address:{ city }} = person1
 
 function printUser{}
 ```
+<br><br>
 
+## Conditionals vs Switch vs Ternary
+[Conditionals w3](https://www.w3schools.com/js/js_if_else.asp). If, Else statements
+```
+if (time < 10){
+    greeting="Good morning"
+} else if (time < 20){
+    greeting = "Good day"
+} else {
+    greeting = "Good evening"
+}
+```
+
+[Switch w3](https://www.w3schools.com/js/js_switch.asp). 
+
+The getDay operator returns a number for the Day. The Switch conditional gives a name to the number.
+```
+switch (new Date().getDay()){
+    case 0:
+        day = "Sunday";
+        break;
+    case 1:
+        day = "Monday";
+        break;
+    case 2:
+        day = "Tuesday";
+        break;
+}
+```
+
+[Ternary Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
+```
+var age = 26
+var beverage = (age >= 21) ? "Beer":"Juice"
+```
 <br><br>
 
 # Folders src
