@@ -3,10 +3,17 @@ Notes on learning React.<br><br>
 
 # Table of Contents
 *[React Notes](#react-notes)
+    * [Using Class and State](#class-state)
     * [Switch vs Router](#Switch-vs-Router)
     * [Hashrouter vs Browserrouter](#Hashrouter-vs-Browserrouter)
     * [Navlink vs Link](#Navlink-vs-Link)
     * [Inline Styling React](Inline-Styling-React)
+
+
+
+## Class State
+An example of using classes, inheritance, and state on [medium](https://medium.com/swlh/create-a-web-page-using-react-d5ad9d03fb1f)
+
 
 
 ## Switch vs Router

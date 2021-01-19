@@ -16,4 +16,7 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 
 # Todo List
-* [ ] Test 
+* [ ] Add promises section to Javascript
+* [ ] Work on react section
+* [ ] Make a docker page
+* [ ] Add to bootstrap section

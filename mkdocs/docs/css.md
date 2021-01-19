@@ -99,7 +99,9 @@ ALIGN-CONTENT should be used with WRAP in flex container.
 
 # Lightbox Photos
 [Lightbox Photo Gallery w3](https://www.w3schools.com/howto/howto_js_lightbox.asp)
-<br>
+
+[Modal photo Gallery w3](https://www.w3schools.com/howto/howto_css_modal_images.asp)
+<br><br>
 
 
 # Bootstrap

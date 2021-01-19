@@ -16,6 +16,7 @@
     * [Strip HTML strings](#Strip-HTML-strings)
     * [Destructuring](#Destructuring)
     * [Conditionals vs Switch vs Ternary](#Conditionals-vs-Switch-vs-Ternary)
+    * [Function](function)
 
 ## Closures and Nesting Functions
 [Closures Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
@@ -251,4 +252,21 @@ switch (new Date().getDay()){
 ```
 var age = 26
 var beverage = (age >= 21) ? "Beer":"Juice"
+```
+<br><br>
+
+
+## Function
+Function Expression, need to be declared before call
+```
+const getRectArea = function(width, height){
+    return width * height;
+}
+
+```
+Function Declaration, can be called at any point
+```
+function getRectArea(width, height){
+    return width * height
+}
 ```
