@@ -6,7 +6,7 @@
 ## Table of Contents
 * [Javascript Notes](#javascript-notes)
     * [Closures and Nesting Functions](#closures-and-nesting-functions)
-        *[private variable](#private-variable)
+        * [private variable](#private-variable)
     * [Recursion vs Loop](#recursion-vs-loop)
     * [Array Methods](#array-methods)
         * [splicing](#splicing)
