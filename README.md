@@ -9,6 +9,9 @@ Used this [youtube tutorial](https://www.youtube.com/watch?v=CXa0f4-dWi4&t=125s)
 Following [this tutorial](https://vegibit.com/create-a-react-element-from-scratch/) to make a to do list
 
 
+Used freecodecamp [todo list tutorial](https://www.freecodecamp.org/news/how-to-build-a-todo-list-with-react-hooks-ebaa4e3db3b/) to clear data and prevent default on submit.
+
+
 ## Table of Contents
 * [Folder Src](#Folder-src)
 * [Todo List](#Todo-list)
