@@ -7,7 +7,9 @@ function TodoForm({onAddTodo, todo}) {
         <form  
             onSubmit={(e) => {
                 e.preventDefault();
-                onAddTodo(value)}
+                onAddTodo(value);
+                setValue('')    
+            }
             }
             style={{display: 'flex'}}
         >
