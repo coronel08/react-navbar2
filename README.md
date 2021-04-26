@@ -9,6 +9,8 @@ Following [this tutorial](https://vegibit.com/create-a-react-element-from-scratc
 Used freecodecamp [todo list tutorial](https://www.freecodecamp.org/news/how-to-build-a-todo-list-with-react-hooks-ebaa4e3db3b/) to clear data and prevent default on submit.
 
 
+Create a search bar in react [iamtimsmith.com](https://www.iamtimsmith.com/blog/lets-build-a-search-bar-using-react-hooks)
+
 ## Table of Contents
 * [Folder Src](#Folder-src)
 * [Todo List](#Todo-list)
