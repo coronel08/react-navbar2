@@ -22,6 +22,9 @@ Create a search bar in react [iamtimsmith.com](https://www.iamtimsmith.com/blog/
 Folder and file structure broken down. 
 <br>
 
+Dockerizing a react nginx app using the following links and tutorials [Dockerizing React](https://typeofnan.dev/how-to-serve-a-react-app-with-nginx-in-docker/) and [Dockerizing React](https://dev.to/bahachammakhi/dockerizing-a-react-app-with-nginx-using-multi-stage-builds-1nfm)<br>
+
+
 ## FOLDERS
 * Components Folder
     * Navbar.css used for styling
